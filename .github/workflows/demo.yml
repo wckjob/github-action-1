@@ -16,6 +16,8 @@ jobs:
     steps:
 
       # Runs a single command using the runners shell
+      - name: Run a multi-line script
+        uses: actions/checkout@v4
       - name: Run a one-line script
         run: echo Hello, world!
 
@@ -25,3 +27,4 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           date
+
